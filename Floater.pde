@@ -1,4 +1,4 @@
-abstract class Floater //Do NOT modify the Floater class! Make changes in the Spaceship class 
+abstract class Floater //Do NOT modify the Floater class! Make changes in the Spaceship clas s 
 {   
   protected int corners;  //the number of corners, a triangular floater h as 3   
   protected int[] xCorners;   
