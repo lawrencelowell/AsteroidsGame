@@ -4,6 +4,7 @@ abstract class Floater //Do NOT modify the Floater class! Make changes in the Sp
   protected int[] xCorners;   
   protected int[] yCorners;   
   protected int myColor;   
+  protected double other;
   protected double myCenterX, myCenterY; //holds center coordinates   
   protected double myDirectionX, myDirectionY; //holds x and y coordinates of the vector for direction of travel   
   protected double myPointDirection; //holds current direction the ship is pointing in degrees    
@@ -23,9 +24,18 @@ abstract class Floater //Do NOT modify the Floater class! Make changes in the Sp
   {          
     //convert the current direction the floater is pointing to radians    
     double dRadians =myPointDirection*(Math.PI/180);     
-    //change coordinates of direction of travel    
+    //change coordinates of direction of travel
     myDirectionX += ((dAmount) * Math.cos(dRadians));    
     myDirectionY += ((dAmount) * Math.sin(dRadians));       
+  }   
+  
+      public void decelerate (double dAmount)   
+  {          
+    //convert the current direction the floater is pointing to radians    
+    double dRadians =myPointDirection*(Math.PI/180);     
+    //change coordinates of direction of travel
+    myDirectionX -= ((dAmount) * Math.cos(dRadians));    
+    myDirectionY -= ((dAmount) * Math.sin(dRadians));       
   }   
   public void turn (int nDegreesOfRotation)   
   {     
@@ -59,8 +69,8 @@ abstract class Floater //Do NOT modify the Floater class! Make changes in the Sp
   }   
   public void show ()  //Draws the floater at the current position  
   {             
-    fill(myColor);   
-    stroke(myColor);    
+    fill(225,225,225);   
+    stroke(200,0,0);    
     
     //translate the (x,y) center of the ship to the correct position
     translate((float)myCenterX, (float)myCenterY);
