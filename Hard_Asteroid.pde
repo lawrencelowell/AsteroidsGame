@@ -1,7 +1,7 @@
 class Hard_Asteroid extends Asteroid
 {
   private double Rspeed;
-  private double Rd = 1;
+  private double Rd = 1.0;
   private int size;
   private double spd = 1;
   private int side = 1;
