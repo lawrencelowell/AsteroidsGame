@@ -3,7 +3,7 @@ class Asteroid extends Floater
   private double Rspeed;
   private double Rd = 1;
   private int size;
-  private double spd = 1;
+  private double spd = 1.0;
   private int side = 1;
      public Asteroid(){
        Rspeed = Math.random()*0.3*(B-10)-0.15*(B-10);
