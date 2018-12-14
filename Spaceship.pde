@@ -6,12 +6,12 @@ class Spaceship extends Floater
      corners = 3;
      xCorners = new int[corners];
      yCorners = new int[corners];
-     xCorners[0] = 0;
-     yCorners[0] = 6;
-     xCorners[1] = 24;
+     xCorners[0] = -8;
+     yCorners[0] = -8;
+     xCorners[1] = 16;
      yCorners[1] = 0;
-     xCorners[2] = 0;
-     yCorners[2] = -6;
+     xCorners[2] = -8;
+     yCorners[2] = 8;
    }
      public int Se = 2;
      public void setX(int x){myCenterX = x;}  
