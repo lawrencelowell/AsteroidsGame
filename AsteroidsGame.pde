@@ -1,7 +1,7 @@
 Spaceship L;
 Star[] S;
 ArrayList <Bullets> P;
-double B = 10;
+double B = 10.0;
 ArrayList <Asteroid> Sad;
 int NSad = 1;
 int timer = 0;
