@@ -247,7 +247,7 @@ public void AstDeath() {
       Sad.add(new Asteroid());
       AS = AS -1;
       P.remove(x);
-      Score=Score + (int)(100/Sad.get(i).size);
+      Score=Score + (int)(30/Sad.get(i).size)+B;
       if(Math.random()<0.001*Sad.get(i).size*B){
         hyperspace = hyperspace + 1;
       }
