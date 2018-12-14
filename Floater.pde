@@ -1,6 +1,6 @@
-abstract class Floater //Do NOT modify the Floater class! Make changes in the Spaceship clas s 
+abstract class Floater //Do NOT modify the Floater class! Make changes in the Spaceship class 
 {   
-  protected int corners;  //the number of corners, a triangular floater h as 3   
+  protected int corners;  //the number of corners, a triangular floater has 3   
   protected int[] xCorners;   
   protected int[] yCorners;   
   protected int myColor;   
@@ -69,9 +69,8 @@ abstract class Floater //Do NOT modify the Floater class! Make changes in the Sp
   }   
   public void show ()  //Draws the floater at the current position  
   {             
-    fill(225,225,225);   
-    stroke(200,0,0);    
-    
+
+    fill(myColor,myColor,myColor);
     //translate the (x,y) center of the ship to the correct position
     translate((float)myCenterX, (float)myCenterY);
 

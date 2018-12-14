@@ -1,10 +1,10 @@
 class Star //note that this class does NOT extend Floater
 {
-  private float x,y,colora,colorb,colorc,size,opacity,change,iS
-  private float counter,sp,other;
+  private float x,y,colora,colorb,colorc,size,opacity,change,iS;
+  private float counter,sp;
   public Star(){
-    x = (float)Math.random()*500;
-    y = (float)Math.random()*500;
+    x = (float)Math.random()*900;
+    y = (float)Math.random()*600;
     opacity = (float)Math.random()*255;
     iS = size = (float)Math.random()*2+1;
     colora = (int)(Math.random()*150)+100;
@@ -34,8 +34,8 @@ class Star //note that this class does NOT extend Floater
     ellipse(x,y,size,size);
   }
   public void reset(){
-    x = (float)Math.random()*500;
-    y = (float)Math.random()*500;
+    x = (float)Math.random()*900;
+    y = (float)Math.random()*600;
     opacity = (float)Math.random()*255;
     size = (float)Math.random()*2.2+1;
     colora = (int)(Math.random()*150)+100;
