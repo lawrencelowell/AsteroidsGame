@@ -99,7 +99,7 @@ public void draw()
     fill(0, 0, 0);
     textSize(35);
     text("Gameover :(", 330, 280);
-    text("Your Score is " + Score, 310, 350);
+    text("Your Score is " + (int)Score, 310, 350);
   }
 }
 public void keyPressed() {
@@ -247,7 +247,7 @@ public void AstDeath() {
       Sad.add(new Asteroid());
       AS = AS -1;
       P.remove(x);
-      Score=Score + 100/Sad.get(i).size;
+      Score=Score + (int)(100/Sad.get(i).size);
       if(Math.random()<0.001*Sad.get(i).size*B){
         hyperspace = hyperspace + 1;
       }
